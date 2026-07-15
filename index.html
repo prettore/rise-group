@@ -60,6 +60,9 @@
             <h2 class="section-title" data-i18n="about.title">Sobre o RISE Group</h2>
             <div class="about-content">
                 <div class="about-text">
+                    <h3 data-i18n="about.origin">Origem do Grupo</h3>
+                    <p data-i18n="about.origin_text">O RISE Group nasceu da ambição de seus líderes em conectar melhor a pesquisa de ponta com as necessidades e demandas das indústrias locais e nacionais. A ideia de criar um grupo de pesquisa com essa missão tornou-se realidade através do projeto <strong>SiR.AI</strong> (Sistemas Resilientes para Ambientes Inteligentes), aceito no <strong>Programa Conhecimento Brasil – Atração e Fixação de Talentos</strong> (CNPq/MCTI/FNDCT nº 21/2024). Este programa forneceu o suporte necessário para estruturar uma equipe multidisciplinar e interinstitucional dedicada a pesquisa de fronteira em sistemas inteligentes e resilientes.</p>
+                    
                     <h3 data-i18n="about.mission">Missão</h3>
                     <p data-i18n="about.mission_text">Projetar sistemas inteligentes que compreendem seu contexto, adaptam seu comportamento e permanecem resilientes em ambientes dinâmicos, promovendo a transformação digital em setores estratégicos.</p>
                     
@@ -83,6 +86,15 @@
                         <div class="stat-number">7</div>
                         <div class="stat-label" data-i18n="about.institutions">Instituições</div>
                     </div>
+                    <div class="stat-card">
+                        <div class="stat-number">45</div>
+                        <div class="stat-label" data-i18n="about.publications">Artigos Científicos</div>
+                    </div>
+                </div>
+                
+                <div class="about-publications" style="margin-top: 25px; padding: 20px; background: rgba(0, 61, 122, 0.05); border-radius: 8px; border-left: 4px solid var(--primary-blue);">
+                    <h4 style="color: var(--primary-blue); margin-bottom: 10px;" data-i18n="about.publications_title">Produção Científica</h4>
+                    <p style="margin: 8px 0; font-size: 0.95rem;" data-i18n="about.publications_detail"><strong>39 conferências internacionais</strong> e <strong>6 periódicos científicos</strong>, totalizando <strong>45 artigos científicos</strong> que demonstram o impacto e visibilidade da pesquisa do grupo na comunidade científica global.</p>
                 </div>
             </div>
         </div>
@@ -435,7 +447,7 @@
                         <p class="project-title" data-i18n="projects.porvir_title">Programmability, Orchestration, and Virtualization on 5G Networks</p>
                         <p class="project-agency">FAPESP - Projeto Temático</p>
                         <p class="project-desc" data-i18n="projects.porvir_desc">Desenvolvimento de tecnologias para programabilidade, orquestração e virtualização em redes 5G, com vigência até janeiro de 2027.</p>
-                        <a href="#" target="_blank" class="project-link" data-i18n="projects.learn_more">Saiba Mais →</a>
+                        <a href="https://porvir-5g-project.github.io/" target="_blank" class="project-link" data-i18n="btn.learn">Saiba Mais</a>
                     </div>
                 </div>
 
@@ -474,7 +486,7 @@
                         <p class="project-title" data-i18n="projects.sfi2_title">Fatiamento de Infraestruturas de Internet do Futuro</p>
                         <p class="project-agency">FAPESP</p>
                         <p class="project-desc" data-i18n="projects.sfi2_desc">Integração de tecnologias emergentes (SDN, NFV, Cloud, IoT, 5G) com a Internet legada.</p>
-                        <a href="#" target="_blank" class="project-link" data-i18n="projects.learn_more">Saiba Mais →</a>
+                        <a href="https://sites.google.com/view/sfi2/home" target="_blank" class="project-link" data-i18n="btn.learn">Saiba Mais</a>
                     </div>
                 </div>
             </div>
@@ -500,33 +512,48 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title" data-i18n="contact.title">Entre em Contato</h2>
-            <p class="section-subtitle" data-i18n="contact.subtitle">Interessado em colaboração ou parceria?</p>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Tem um desafio tecnológico? Traga seu problema. Juntos, podemos transformá-lo em um projeto de pesquisa e inovação.</p>
 
             <div class="contact-content">
-                <div class="contact-info" style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                <div class="contact-info" style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                    <!-- Líder Principal -->
+                    <div class="contact-item" style="background: rgba(0, 61, 122, 0.05); padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary-blue);">
+                        <h4 style="color: var(--primary-blue); margin-bottom: 15px;">Prof. Dr. Paulo Rettore</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 10px; color: var(--text-light);"><strong>Líder Principal</strong></p>
+                        <div style="margin-bottom: 10px;">
+                            <i class="fas fa-envelope" style="color: var(--primary-blue); margin-right: 8px;"></i>
+                            <a href="mailto:paulo.rettore@ufla.br" style="color: var(--primary-blue); text-decoration: none;">paulo.rettore@ufla.br</a>
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-blue); margin-right: 8px;"></i>
+                            <span style="font-size: 0.9rem;">Departamento de Ciência da Computação<br>Universidade Federal de Lavras (UFLA)<br>Lavras, MG, Brasil</span>
+                        </div>
                         <div>
-                            <h4 data-i18n="contact.email">Email</h4>
-                            <p><a href="mailto:paulo.rettore@ufla.br">paulo.rettore@ufla.br</a></p>
+                            <i class="fas fa-globe" style="color: var(--primary-blue); margin-right: 8px;"></i>
+                            <a href="https://www.rettore.com.br" target="_blank" style="color: var(--primary-blue); text-decoration: none;">www.rettore.com.br</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4 data-i18n="contact.location">Localização</h4>
-                            <p data-i18n="contact.address">Departamento de Ciência da Computação<br>Universidade Federal de Lavras (UFLA)<br>Lavras, MG, Brasil</p>
+                    
+                    <!-- Vice-Líder -->
+                    <div class="contact-item" style="background: rgba(0, 168, 150, 0.05); padding: 20px; border-radius: 8px; border-left: 4px solid var(--secondary-teal);">
+                        <h4 style="color: var(--secondary-teal); margin-bottom: 15px;">Prof. Dr. Bruno Pereira dos Santos</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 10px; color: var(--text-light);"><strong>Vice-Líder</strong></p>
+                        <div style="margin-bottom: 10px;">
+                            <i class="fas fa-envelope" style="color: var(--secondary-teal); margin-right: 8px;"></i>
+                            <a href="mailto:bruno.ps@ufba.br" style="color: var(--secondary-teal); text-decoration: none;">bruno.ps@ufba.br</a>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
+                        <div style="margin-bottom: 10px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--secondary-teal); margin-right: 8px;"></i>
+                            <span style="font-size: 0.9rem;">Sala 209 - PAF2 - DCC<br>Instituto de Computação - UFBA<br>Salvador, BA, Brasil</span>
+                        </div>
                         <div>
-                            <h4 data-i18n="contact.web">Website</h4>
-                            <p><a href="https://www.rettore.com.br" target="_blank">www.rettore.com.br</a></p>
+                            <i class="fas fa-globe" style="color: var(--secondary-teal); margin-right: 8px;"></i>
+                            <a href="https://bps90.github.io" target="_blank" style="color: var(--secondary-teal); text-decoration: none;">bps90.github.io</a>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
