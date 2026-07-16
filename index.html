@@ -23,12 +23,13 @@
                 <span></span>
             </div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#approach" class="nav-link">Abordagem</a></li>
-                <li><a href="#competencies" class="nav-link">Competências</a></li>
-                <li><a href="#team" class="nav-link">Equipe</a></li>
-                <li><a href="#projects" class="nav-link">Projetos</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#approach" class="nav-link" data-i18n="nav.approach">Abordagem</a></li>
+                <li><a href="#competencies" class="nav-link" data-i18n="nav.competencies">Competências</a></li>
+                <li><a href="#team" class="nav-link" data-i18n="nav.team">Equipe</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a></li>
+                <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfólio</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contato</a></li>
                 <li class="lang-toggle">
                     <button id="langBtn" class="lang-btn">EN</button>
                 </li>
@@ -507,6 +508,91 @@
             </div>
         </div>
     </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio" style="background-color: #f8f9fa; padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title" data-i18n="portfolio.title">Casos de Uso e Portfólio</h2>
+            <p class="section-subtitle" data-i18n="portfolio.subtitle">Demonstrações práticas da nossa capacidade de desenvolver soluções inteligentes e resilientes</p>
+
+            <div class="portfolio-grid" style="display: grid; grid-template-columns: 1fr; gap: 40px; margin-top: 40px;">
+                
+                <!-- Caso 1: Mobilidade Urbana e Tática -->
+                <div class="portfolio-item" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                    <div class="portfolio-image" style="width: 100%; max-height: 300px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #e9ecef;">
+                        <img src="assets/images/urban-mobility.gif" alt="Mobilidade Urbana e Tática" style="width: 100%; height: auto; object-fit: cover;">
+                    </div>
+                    <div class="portfolio-content" style="padding: 30px;">
+                        <div class="portfolio-tags" style="margin-bottom: 15px;">
+                            <span style="background: var(--primary-blue); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px;" data-i18n="portfolio.tag_mobility">Mobilidade</span>
+                            <span style="background: var(--secondary-teal); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px;" data-i18n="portfolio.tag_ai">Inteligência Artificial</span>
+                        </div>
+                        <h3 style="color: var(--primary-blue); margin-bottom: 15px; font-size: 1.5rem;" data-i18n="portfolio.case1_title">Mobilidade Urbana e Tática</h3>
+                        <p style="color: var(--text-color); line-height: 1.6; margin-bottom: 20px;" data-i18n="portfolio.case1_desc">Modelagem e predição de padrões de mobilidade em ambientes urbanos e táticos utilizando dados espaço-temporais e semânticos. Nossas soluções permitem antecipar movimentos, otimizar rotas e melhorar a resiliência de sistemas de transporte e operações críticas em cenários dinâmicos.</p>
+                        <div class="portfolio-paper" style="background: rgba(0, 61, 122, 0.05); padding: 15px; border-left: 3px solid var(--primary-blue); font-size: 0.9rem;">
+                            <strong data-i18n="portfolio.paper_ref">Trabalho Relacionado:</strong> <em>Characterization, Modeling, and Prediction of Urban Mobility</em> (2025)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 2: SDN -->
+                <div class="portfolio-item" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                    <div class="portfolio-image" style="width: 100%; max-height: 300px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #e9ecef; padding: 20px;">
+                        <img src="assets/images/ComMag2024_SDTN.png" alt="Software-Defined Tactical Networks" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    </div>
+                    <div class="portfolio-content" style="padding: 30px;">
+                        <div class="portfolio-tags" style="margin-bottom: 15px;">
+                            <span style="background: var(--primary-blue); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px;" data-i18n="portfolio.tag_sdn">SDN</span>
+                            <span style="background: var(--secondary-teal); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px;" data-i18n="portfolio.tag_resilience">Resiliência</span>
+                        </div>
+                        <h3 style="color: var(--primary-blue); margin-bottom: 15px; font-size: 1.5rem;" data-i18n="portfolio.case2_title">Redes Táticas Definidas por Software (SDTN)</h3>
+                        <p style="color: var(--text-color); line-height: 1.6; margin-bottom: 20px;" data-i18n="portfolio.case2_desc">Arquiteturas hierárquicas de controle para redes táticas utilizando o paradigma SDN (Software-Defined Networking). A solução permite gerenciamento dinâmico em múltiplos níveis (Global, Local e Operacional), garantindo resiliência, adaptabilidade e eficiência em ambientes de comunicação hostis e intermitentes.</p>
+                        <div class="portfolio-paper" style="background: rgba(0, 61, 122, 0.05); padding: 15px; border-left: 3px solid var(--primary-blue); font-size: 0.9rem;">
+                            <strong data-i18n="portfolio.paper_ref">Trabalho Relacionado:</strong> <em>Software-Defined Tactical Networks: Architecture, Challenges, and Opportunities</em> (IEEE Communications Magazine, 2024)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 3: IoT -->
+                <div class="portfolio-item" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                    <div class="portfolio-image" style="width: 100%; max-height: 300px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #e9ecef; padding: 20px;">
+                        <img src="assets/images/ComMag2024_IoMT.png" alt="Internet of Military Things" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    </div>
+                    <div class="portfolio-content" style="padding: 30px;">
+                        <div class="portfolio-tags" style="margin-bottom: 15px;">
+                            <span style="background: var(--primary-blue); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px;" data-i18n="portfolio.tag_iot">IoT</span>
+                            <span style="background: var(--secondary-teal); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px;" data-i18n="portfolio.tag_cybersecurity">Cibersegurança</span>
+                        </div>
+                        <h3 style="color: var(--primary-blue); margin-bottom: 15px; font-size: 1.5rem;" data-i18n="portfolio.case3_title">Internet das Coisas em Ambientes Críticos (IoMT)</h3>
+                        <p style="color: var(--text-color); line-height: 1.6; margin-bottom: 20px;" data-i18n="portfolio.case3_desc">Integração de dispositivos IoT em cenários críticos através de uma arquitetura em camadas (Percepção, Comunicação e Aplicação). O modelo suporta desde sensores veiculares e drones até sistemas de comando, focando em interoperabilidade, segurança em ambientes federados e consciência situacional avançada.</p>
+                        <div class="portfolio-paper" style="background: rgba(0, 61, 122, 0.05); padding: 15px; border-left: 3px solid var(--primary-blue); font-size: 0.9rem;">
+                            <strong data-i18n="portfolio.paper_ref">Trabalho Relacionado:</strong> <em>Internet of Military Things: A Comprehensive Review</em> (IEEE Communications Magazine, 2024)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 4: LLMs -->
+                <div class="portfolio-item" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                    <div class="portfolio-image" style="width: 100%; max-height: 300px; overflow: hidden; display: flex; justify-content: center; align-items: center; background: #e9ecef; padding: 20px;">
+                        <img src="assets/images/GeNetE.png" alt="Generative Network Environments" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    </div>
+                    <div class="portfolio-content" style="padding: 30px;">
+                        <div class="portfolio-tags" style="margin-bottom: 15px;">
+                            <span style="background: var(--primary-blue); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px;" data-i18n="portfolio.tag_llm">LLMs / IA Generativa</span>
+                            <span style="background: var(--secondary-teal); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px;" data-i18n="portfolio.tag_networks">Redes</span>
+                        </div>
+                        <h3 style="color: var(--primary-blue); margin-bottom: 15px; font-size: 1.5rem;" data-i18n="portfolio.case4_title">Treinamento e Fine-Tuning de LLMs para Redes (GeNetE)</h3>
+                        <p style="color: var(--text-color); line-height: 1.6; margin-bottom: 20px;" data-i18n="portfolio.case4_desc">Desenvolvimento do framework GeNetE (Generative Network Environments) para especialização de Small Language Models (SLMs). A metodologia envolve três fases: Auto-instrução para extração de tarefas, Validação via emuladores de rede e Fine-tuning final. O resultado é um modelo especializado capaz de gerar configurações e gerenciar redes complexas com alta precisão.</p>
+                        <div class="portfolio-paper" style="background: rgba(0, 61, 122, 0.05); padding: 15px; border-left: 3px solid var(--primary-blue); font-size: 0.9rem;">
+                            <strong data-i18n="portfolio.paper_ref">Trabalho Relacionado:</strong> <em>GeNetE: Generative Network Environments - A Specialized Small Language Model</em> (2025)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
