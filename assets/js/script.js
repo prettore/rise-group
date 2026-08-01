@@ -352,6 +352,7 @@ let currentLanguage = localStorage.getItem('language') || 'pt-BR';
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
     initializeLanguage();
+    setupLanguageButton();
     setupNavigation();
     setupFormSubmission();
     setupScrollAnimations();
@@ -391,14 +392,21 @@ function updateLanguage(lang) {
 
 function updateLanguageButton() {
     const langBtn = document.getElementById('langBtn');
-    langBtn.textContent = currentLanguage === 'pt-BR' ? 'EN' : 'PT';
+    if (langBtn) {
+        langBtn.textContent = currentLanguage === 'pt-BR' ? 'EN' : 'PT';
+    }
 }
 
-document.getElementById('langBtn').addEventListener('click', function() {
-    const newLang = currentLanguage === 'pt-BR' ? 'en' : 'pt-BR';
-    updateLanguage(newLang);
-    updateLanguageButton();
-});
+function setupLanguageButton() {
+    const langBtn = document.getElementById('langBtn');
+    if (langBtn) {
+        langBtn.addEventListener('click', function() {
+            const newLang = currentLanguage === 'pt-BR' ? 'en' : 'pt-BR';
+            updateLanguage(newLang);
+            updateLanguageButton();
+        });
+    }
+}
 
 // Navigation
 function setupNavigation() {
