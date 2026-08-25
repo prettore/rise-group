@@ -24,6 +24,12 @@
         .badge-conf { background-color: rgba(0, 168, 150, 0.1); color: var(--secondary-teal); }
         .badge-journal { background-color: rgba(0, 61, 122, 0.1); color: var(--primary-blue); }
         .badge-qualis { background-color: #f39c12; color: white; }
+        .badge-approved { background-color: rgba(39, 174, 96, 0.12); color: #218c4b; }
+        .badge-submitted { background-color: rgba(243, 156, 18, 0.16); color: #b66b00; }
+        .badge-rejected { background-color: rgba(192, 57, 43, 0.12); color: #a93226; }
+        .pub-status { display: inline-block; margin-top: 8px; padding: 3px 8px; border-radius: 999px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.02em; }
+        .pub-editor { color: #888; font-style: normal; }
+        .pub-date { color: #666; margin-top: 5px; display: block; }
         
         .pub-title { font-weight: 600; color: var(--text-color); margin-bottom: 5px; display: block; }
         .pub-venue { font-size: 0.9rem; color: #666; font-style: italic; }
@@ -67,15 +73,15 @@
             
             <div class="pub-stats">
                 <div class="stat-box">
-                    <div class="stat-number">45</div>
-                    <div class="stat-label" data-i18n="pub.total">Artigos Publicados</div>
+                    <div class="stat-number">44</div>
+                    <div class="stat-label" data-i18n="pub.total">Artigos no relatório</div>
                 </div>
                 <div class="stat-box">
                     <div class="stat-number">39</div>
-                    <div class="stat-label" data-i18n="pub.conferences">Em Conferências</div>
+                    <div class="stat-label" data-i18n="pub.conferences">Conferências e pôsteres</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">6</div>
+                    <div class="stat-number">5</div>
                     <div class="stat-label" data-i18n="pub.journals">Em Periódicos</div>
                 </div>
             </div>
@@ -87,430 +93,494 @@
                             <th width="5%">#</th>
                             <th width="55%" data-i18n="pub.th_title">Título & Evento/Revista</th>
                             <th width="15%" data-i18n="pub.th_type">Tipo</th>
-                            <th width="10%" data-i18n="pub.th_qualis">Qualis/Ano</th>
+                            <th width="10%" data-i18n="pub.th_qualis">Qualis / Data</th>
                             <th width="15%" data-i18n="pub.th_link">Link</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <span class="pub-title">SDN in Tactical Networks: Advances and Open Challenges in the Field</span>
-                                <span class="pub-venue">ComMag IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-journal">Periodico</span></td>
-                            <td><span class="pub-badge badge-qualis">A1</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td><a href="https://doi.org/10.1109/MCOM.001.2500526" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>
-                                <span class="pub-title">Conflict Resolution in Train Timetabling Using Alternative Graphs and Deep Q-Networks</span>
-                                <span class="pub-venue">ISCC IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A2</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>
-                                <span class="pub-title">Scalability and Resilience Challenges in SDWN: Investigating OpenFlow in Dynamic Scenarios</span>
-                                <span class="pub-venue">ISCC IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A2</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>
-                                <span class="pub-title">Designing Reinforcement Learning-Based Scheduling Functions for 6TiSCH Networks: A Systematic Review and Novel Approach</span>
-                                <span class="pub-venue">AD HOC NETWORKS ACM</span>
-                            </td>
-                            <td><span class="pub-badge badge-journal">Periodico</span></td>
-                            <td><span class="pub-badge badge-qualis">A1</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>
-                                <span class="pub-title">Joint Optimization of Routing and Drone Positioning in UAV-enabled URLLC for 5G</span>
-                                <span class="pub-venue">IEEE Access IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-journal">Periodico</span></td>
-                            <td><span class="pub-badge badge-qualis">A1</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>
-                                <span class="pub-title">Software-Defined Tactical Networks: Challenges and Solutions to Reduce Control Overhead        </span>
-                                <span class="pub-venue">ICMCIS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>
-                                <span class="pub-title">Desafios de Escalabilidade e Resiliência em SDN sob Mobilidade: Uma Analise Exploratória do OpenFlow</span>
-                                <span class="pub-venue">SBRC SBC</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td><a href="https://doi.org/10.5753/sbrc.2026.19350" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>
-                                <span class="pub-title">Analise do impacto da qualidade de rede na experiência do jogador em jogos de realidade virtual</span>
-                                <span class="pub-venue">SBRC SBC</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td><a href="https://doi.org/10.5753/sbrc.2026.19797" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>
-                                <span class="pub-title">Em Direcao ao Realismo Espacial: Um Modelo de Mobilidade Humana Baseado em Small World In Motion e OpenStreetMap</span>
-                                <span class="pub-venue">SBRC SBC</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td><a href="https://doi.org/10.5753/sbrc.2026.19829" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>
-                                <span class="pub-title">Análise do uso de Modelos de Linguagem de Grande Escala na Geração de Códigos para Simulação de Redes utilizando o Mininet WI-FI</span>
-                                <span class="pub-venue">SBRC SBC</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td><a href="https://doi.org/10.5753/sbrc.2026.19370" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>
-                                <span class="pub-title">Do Dado à Ação: Modelando Pragmatismo no contexto da Internet das Coisas</span>
-                                <span class="pub-venue">SBRC-WTG SBC</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>
-                                <span class="pub-title">Characterizing Global Container Shipping: A Data-Driven Approach to Maritime Logistics</span>
-                                <span class="pub-venue">DCOSS-UrbComp IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="10">
+                            <td>44</td>
                             <td>
                                 <span class="pub-title">FCDA - A Federated Cyber Defense Agent Model to Safeguard Constrained Military IoT Networks</span>
-                                <span class="pub-venue">MILCOM  IEEE</span>
+                                <span class="pub-venue">MILCOM <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
                             </td>
                             <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A2</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
+                            <td><span class="pub-badge badge-qualis">A2</span><br><small class="pub-date">Outubro 2026</small></td>
                             <td></td>
                         </tr>
-                        <tr>
-                            <td>14</td>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="10">
+                            <td>43</td>
                             <td>
                                 <span class="pub-title">Intelligent Drone Positioning and Routing via Stochastic Optimization for Resilient Communications</span>
-                                <span class="pub-venue">MILCOM  IEEE</span>
+                                <span class="pub-venue">MILCOM <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
                             </td>
                             <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A2</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
+                            <td><span class="pub-badge badge-qualis">A2</span><br><small class="pub-date">Outubro 2026</small></td>
                             <td></td>
                         </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>
-                                <span class="pub-title">Multi-Agent Reinforcement Learning for Resilient UAV Backhaul in Contested Environments</span>
-                                <span class="pub-venue">MILCOM  IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A2</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>16</td>
-                            <td>
-                                <span class="pub-title">Exploring Realistic Military Vehicular Network Scenarios to Evaluate AI-Based Countermeasures Against Cyber Attacks</span>
-                                <span class="pub-venue">MILCOM  IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A2</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>17</td>
-                            <td>
-                                <span class="pub-title">FedREL: Federated Reliability Learning for Resilient Multimodal Beam Prediction in Mobile Networks</span>
-                                <span class="pub-venue">CCNC IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A2</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>18</td>
-                            <td>
-                                <span class="pub-title">Multimodal Sensing for Quality-Aware Web Media Adaptation in Mobile Networks</span>
-                                <span class="pub-venue">CCNC IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A3</span><br><small style="color:#666; margin-top:5px; display:block;">2026</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>19</td>
-                            <td>
-                                <span class="pub-title">Characterization and prediction of customer (dis)satisfaction of a mobile phone operator</span>
-                                <span class="pub-venue">AINA IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A3</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1007/978-3-031-87763-6_22" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>20</td>
-                            <td>
-                                <span class="pub-title">A Cyber Defense System for Software-Defined Tactical Networks</span>
-                                <span class="pub-venue">ICMCIS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>21</td>
-                            <td>
-                                <span class="pub-title">Cyber Operations Gyms to Train Autonomous Cyber Defense Agents for NATO        </span>
-                                <span class="pub-venue">ICMCIS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1109/ICMCIS64378.2025.11047884" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>22</td>
-                            <td>
-                                <span class="pub-title">Securing Software-Defined Tactical Networks: A Cyber Defense System</span>
-                                <span class="pub-venue">IFIP IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A3</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://networking.ifip.org/2025/images/Net25_papers/1571125384.pdf" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>23</td>
-                            <td>
-                                <span class="pub-title">Towards Resilient Cybersecurity in IoBT: Aligning Defense in Depth with CIA-CAP Constraints</span>
-                                <span class="pub-venue">MILCOM-WS03 IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1109/MILCOM64451.2025.11310451" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>24</td>
-                            <td>
-                                <span class="pub-title">GeNetE - Generative Network Environments: a Specialized Small Language Model</span>
-                                <span class="pub-venue">MILCOM IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A2</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1109/MILCOM64451.2025.11310543" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td>
-                                <span class="pub-title">Towards a Realistic Tactical Mobility Model: Characterizing the Anglova Scenario</span>
-                                <span class="pub-venue">MILCOM IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A2</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1109/MILCOM64451.2025.11310732" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>26</td>
-                            <td>
-                                <span class="pub-title">PORVIR-5G: Programmability, ORchestration, and VIRtualization of Next Generation Networks</span>
-                                <span class="pub-venue">https://link.springer.com/journal/12243 IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-journal">Periodico</span></td>
-                            <td><span class="pub-badge badge-qualis">A3</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1007/s12243-025-01136-7" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>27</td>
-                            <td>
-                                <span class="pub-title">Predicting Vehicle Trajectories based on Latitude and Longitude Positioning Historical Data</span>
-                                <span class="pub-venue">NetMob Null</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>28</td>
-                            <td>
-                                <span class="pub-title">Enabling Next-Generation Networks through Programmability, Orchestration, and Virtualization: A Brazilian 5G Initiative</span>
-                                <span class="pub-venue">CSCN IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A3</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1109/CSCN67557.2025.11230686" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>29</td>
-                            <td>
-                                <span class="pub-title">Enabling the Design of Robust Network Applications by Creating Realistic Scenarios</span>
-                                <span class="pub-venue">SDS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1109/SDS68531.2025.11409755" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>30</td>
-                            <td>
-                                <span class="pub-title">Towards Realistic Testing of Algorithms and Protocols in IoT Through a Novel Mobility Model</span>
-                                <span class="pub-venue">SDS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1109/SDS68531.2025.11409864" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>31</td>
-                            <td>
-                                <span class="pub-title">SnapAI: a Simulator for Network Algorithms and Protocols with Artificial Intelligence integration</span>
-                                <span class="pub-venue">SDS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1109/SDS68531.2025.11409784" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>32</td>
-                            <td>
-                                <span class="pub-title">MobMetrics: A Modular Architecture for Computing and Visualizing Mobility Metrics</span>
-                                <span class="pub-venue">SDS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.1109/SDS68531.2025.11409873" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>33</td>
-                            <td>
-                                <span class="pub-title">Análise do uso de Modelos de Linguagem de Grande Escala na Geração de Códigos para Automação Residencial</span>
-                                <span class="pub-venue">Web-Media SBC</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2025</small></td>
-                            <td><a href="https://doi.org/10.5753/webmedia.2025.15971" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>34</td>
-                            <td>
-                                <span class="pub-title">Uma abordagem Q-Learning para escalonamento dinâmico de comunicação do TSCH</span>
-                                <span class="pub-venue">SBRC SBC</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2024</small></td>
-                            <td><a href="https://doi.org/10.5753/sbrc.2024.1275" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>35</td>
-                            <td>
-                                <span class="pub-title">Adaptive QoS Mechanisms for Control and Data Planes of Software-Defined Tactical Networks</span>
-                                <span class="pub-venue">ICMCIS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2024</small></td>
-                            <td><a href="https://doi.org/10.1109/ICMCIS61231.2024.10540703" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>36</td>
-                            <td>
-                                <span class="pub-title">Towards a Cyber Defense System in Software-defined Tactical Networks</span>
-                                <span class="pub-venue">ICMCIS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2024</small></td>
-                            <td><a href="https://doi.org/10.1109/ICMCIS61231.2024.10540952" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>37</td>
-                            <td>
-                                <span class="pub-title">SOFTANET: Slices, QoS and Resilience in Federated Mission Networks with SDN</span>
-                                <span class="pub-venue">ICMCIS - NATO NATO</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Poster</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2024</small></td>
-                            <td><a href="https://www.sto.nato.int/publications/STO%20Meeting%20Proceedings/STO-MP-IST-205/MP-IST-205-36.pdf" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>38</td>
-                            <td>
-                                <span class="pub-title">A Framework to Support Informed Decisions Based on Networked-C2 Agility: Working Process</span>
-                                <span class="pub-venue">ICMCIS - NATO NATO</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td>-<br><small style="color:#666; margin-top:5px; display:block;">2024</small></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>39</td>
-                            <td>
-                                <span class="pub-title">A Privacy-Preserving Contact Tracing System based on a Publish-Subscribe Model</span>
-                                <span class="pub-venue">JISA SBC</span>
-                            </td>
-                            <td><span class="pub-badge badge-journal">Periodico</span></td>
-                            <td><span class="pub-badge badge-qualis">A3</span><br><small style="color:#666; margin-top:5px; display:block;">2024</small></td>
-                            <td><a href="https://doi.org/10.5753/jisa.2024.3781" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>40</td>
-                            <td>
-                                <span class="pub-title">Towards a Real Vehicular Data Cloud</span>
-                                <span class="pub-venue">SDS IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2024</small></td>
-                            <td><a href="https://doi.org/10.1109/SDS64317.2024.10883915" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
-                            <td>41</td>
-                            <td>
-                                <span class="pub-title">Military IoT from Management to Perception: Challenges and Opportunities Across Layers</span>
-                                <span class="pub-venue">IoT Magazine (IoTM) IEEE</span>
-                            </td>
-                            <td><span class="pub-badge badge-journal">Periodico</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2024</small></td>
-                            <td><a href="https://doi.org/10.1109/IOTM.001.2400141" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
-                        </tr>
-                        <tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="10">
                             <td>42</td>
                             <td>
-                                <span class="pub-title">Towards a Resilient Multi-Agent Controller: Securing and Mitigating Overhead in Tactical SDN</span>
-                                <span class="pub-venue">SDS IEEE</span>
+                                <span class="pub-title">Multi-Agent Reinforcement Learning for Resilient UAV Backhaul in Contested Environments</span>
+                                <span class="pub-venue">MILCOM <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
                             </td>
                             <td><span class="pub-badge badge-conf">Conferencia</span></td>
-                            <td><span class="pub-badge badge-qualis">A4</span><br><small style="color:#666; margin-top:5px; display:block;">2024</small></td>
-                            <td><a href="https://doi.org/10.1109/SDS64317.2024.10883914" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                            <td><span class="pub-badge badge-qualis">A2</span><br><small class="pub-date">Outubro 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-submetido" data-year="2026" data-month="10">
+                            <td>41</td>
+                            <td>
+                                <span class="pub-title">Em Direção a um Sistema de Irrigação Adaptativo Baseado em Aprendizado por Reforço</span>
+                                <span class="pub-venue">Webmidia - CTIC <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-submitted">Em submissão</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Outubro 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-submetido" data-year="2026" data-month="10">
+                            <td>40</td>
+                            <td>
+                                <span class="pub-title">Em direção a um Sistema de Proteção da Identidade de Dispositivos IoT Baseado em Classificação de Tráfego e Geração de Ruído</span>
+                                <span class="pub-venue">Webmidia - CTIC <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-submitted">Em submissão</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Outubro 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-submetido" data-year="2026" data-month="10">
+                            <td>39</td>
+                            <td>
+                                <span class="pub-title">Em Direção a uma Interface de Visualização e Aprendizado para o CybORG: um Ambiente para Agentes Cibernéticos Autônomos</span>
+                                <span class="pub-venue">Webmidia - CTIC <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-submitted">Em submissão</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Outubro 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-submetido" data-year="2026" data-month="10">
+                            <td>38</td>
+                            <td>
+                                <span class="pub-title">MobTrack: Rastreamento e Análise Automatizada da Locomoção Animal</span>
+                                <span class="pub-venue">Webmidia - WFA <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-submitted">Em submissão</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Outubro 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="6">
+                            <td>37</td>
+                            <td>
+                                <span class="pub-title">Conflict Resolution in Train Timetabling Using Alternative Graphs and Deep Q-Networks</span>
+                                <span class="pub-venue">ISCC <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A2</span><br><small class="pub-date">Junho 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="6">
+                            <td>36</td>
+                            <td>
+                                <span class="pub-title">Scalability and Resilience Challenges in SDWN: Investigating OpenFlow in Dynamic Scenarios</span>
+                                <span class="pub-venue">ISCC <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A2</span><br><small class="pub-date">Junho 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-submetido" data-year="2026" data-month="6">
+                            <td>35</td>
+                            <td>
+                                <span class="pub-title">Designing Reinforcement Learning-Based Scheduling Functions for 6TiSCH Networks: A Systematic Review and Novel Approach</span>
+                                <span class="pub-venue">AD HOC NETWORKS <span class="pub-editor">ACM</span></span>
+                                <span class="pub-status badge-submitted">Em submissão</span>
+                            </td>
+                            <td><span class="pub-badge badge-journal">Periodico</span></td>
+                            <td><span class="pub-badge badge-qualis">A1</span><br><small class="pub-date">Junho 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="6">
+                            <td>34</td>
+                            <td>
+                                <span class="pub-title">Characterizing Global Container Shipping: A Data-Driven Approach to Maritime Logistics</span>
+                                <span class="pub-venue">DCOSS-UrbComp <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Junho 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-submetido" data-year="2026" data-month="6">
+                            <td>33</td>
+                            <td>
+                                <span class="pub-title">FedREL: Federated Reliability Learning for Resilient Multimodal Beam Prediction in Mobile Networks</span>
+                                <span class="pub-venue">CCNC <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-submitted">Em submissão</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A2</span><br><small class="pub-date">Junho 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-submetido" data-year="2026" data-month="6">
+                            <td>32</td>
+                            <td>
+                                <span class="pub-title">Multimodal Sensing for Quality-Aware Web Media Adaptation in Mobile Networks</span>
+                                <span class="pub-venue">CCNC <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-submitted">Em submissão</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A3</span><br><small class="pub-date">Junho 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="5">
+                            <td>31</td>
+                            <td>
+                                <span class="pub-title">SDN in Tactical Networks: Advances and Open Challenges in the Field</span>
+                                <span class="pub-venue">ComMag <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-journal">Periodico</span></td>
+                            <td><span class="pub-badge badge-qualis">A1</span><br><small class="pub-date">Maio 2026</small></td>
+                            <td><a href="https://doi.org/10.1109/MCOM.001.2500526" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="5">
+                            <td>30</td>
+                            <td>
+                                <span class="pub-title">Software-Defined Tactical Networks: Challenges and Solutions to Reduce Control Overhead</span>
+                                <span class="pub-venue">ICMCIS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Maio 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="5">
+                            <td>29</td>
+                            <td>
+                                <span class="pub-title">Desafios de Escalabilidade e Resiliência em SDN sob Mobilidade: Uma Analise Exploratória do OpenFlow</span>
+                                <span class="pub-venue">SBRC <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Maio 2026</small></td>
+                            <td><a href="https://doi.org/10.5753/sbrc.2026.19350" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="5">
+                            <td>28</td>
+                            <td>
+                                <span class="pub-title">Analise do impacto da qualidade de rede na experiência do jogador em jogos de realidade virtual</span>
+                                <span class="pub-venue">SBRC <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Maio 2026</small></td>
+                            <td><a href="https://doi.org/10.5753/sbrc.2026.19797" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="5">
+                            <td>27</td>
+                            <td>
+                                <span class="pub-title">Em Direcao ao Realismo Espacial: Um Modelo de Mobilidade Humana Baseado em Small World In Motion e OpenStreetMap</span>
+                                <span class="pub-venue">SBRC <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Maio 2026</small></td>
+                            <td><a href="https://doi.org/10.5753/sbrc.2026.19829" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="5">
+                            <td>26</td>
+                            <td>
+                                <span class="pub-title">Análise do uso de Modelos de Linguagem de Grande Escala na Geração de Códigos para Simulação de Redes utilizando o Mininet WI-FI</span>
+                                <span class="pub-venue">SBRC <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Maio 2026</small></td>
+                            <td><a href="https://doi.org/10.5753/sbrc.2026.19370" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2026" data-month="5">
+                            <td>25</td>
+                            <td>
+                                <span class="pub-title">Do Dado à Ação: Modelando Pragmatismo no contexto da Internet das Coisas</span>
+                                <span class="pub-venue">SBRC-WTG <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Maio 2026</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="12">
+                            <td>24</td>
+                            <td>
+                                <span class="pub-title">Enabling the Design of Robust Network Applications by Creating Realistic Scenarios</span>
+                                <span class="pub-venue">SDS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Dezembro 2025</small></td>
+                            <td><a href="https://doi.org/10.1109/SDS68531.2025.11409755" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="12">
+                            <td>23</td>
+                            <td>
+                                <span class="pub-title">Towards Realistic Testing of Algorithms and Protocols in IoT Through a Novel Mobility Model</span>
+                                <span class="pub-venue">SDS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Dezembro 2025</small></td>
+                            <td><a href="https://doi.org/10.1109/SDS68531.2025.11409864" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="12">
+                            <td>22</td>
+                            <td>
+                                <span class="pub-title">SnapAI: a Simulator for Network Algorithms and Protocols with Artificial Intelligence integration</span>
+                                <span class="pub-venue">SDS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Dezembro 2025</small></td>
+                            <td><a href="https://doi.org/10.1109/SDS68531.2025.11409784" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="12">
+                            <td>21</td>
+                            <td>
+                                <span class="pub-title">MobMetrics: A Modular Architecture for Computing and Visualizing Mobility Metrics</span>
+                                <span class="pub-venue">SDS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Dezembro 2025</small></td>
+                            <td><a href="https://doi.org/10.1109/SDS68531.2025.11409873" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="11">
+                            <td>20</td>
+                            <td>
+                                <span class="pub-title">Análise do uso de Modelos de Linguagem de Grande Escala na Geração de Códigos para Automação Residencial</span>
+                                <span class="pub-venue">Web-Media <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Novembro 2025</small></td>
+                            <td><a href="https://doi.org/10.5753/webmedia.2025.15971" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="10">
+                            <td>19</td>
+                            <td>
+                                <span class="pub-title">Towards Resilient Cybersecurity in IoBT: Aligning Defense in Depth with CIA-CAP Constraints</span>
+                                <span class="pub-venue">MILCOM-WS03 <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Outubro 2025</small></td>
+                            <td><a href="https://doi.org/10.1109/MILCOM64451.2025.11310451" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="10">
+                            <td>18</td>
+                            <td>
+                                <span class="pub-title">GeNetE - Generative Network Environments: a Specialized Small Language Model</span>
+                                <span class="pub-venue">MILCOM <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A2</span><br><small class="pub-date">Outubro 2025</small></td>
+                            <td><a href="https://doi.org/10.1109/MILCOM64451.2025.11310543" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="10">
+                            <td>17</td>
+                            <td>
+                                <span class="pub-title">Towards a Realistic Tactical Mobility Model: Characterizing the Anglova Scenario</span>
+                                <span class="pub-venue">MILCOM <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A2</span><br><small class="pub-date">Outubro 2025</small></td>
+                            <td><a href="https://doi.org/10.1109/MILCOM64451.2025.11310732" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="10">
+                            <td>16</td>
+                            <td>
+                                <span class="pub-title">Predicting Vehicle Trajectories based on Latitude and Longitude Positioning Historical Data</span>
+                                <span class="pub-venue">NetMob</span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Outubro 2025</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="7">
+                            <td>15</td>
+                            <td>
+                                <span class="pub-title">PORVIR-5G: Programmability, ORchestration, and VIRtualization of Next Generation Networks</span>
+                                <span class="pub-venue">https://link.springer.com/journal/12243 <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-journal">Periodico</span></td>
+                            <td><span class="pub-badge badge-qualis">A3</span><br><small class="pub-date">Julho 2025</small></td>
+                            <td><a href="https://doi.org/10.1007/s12243-025-01136-7" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="7">
+                            <td>14</td>
+                            <td>
+                                <span class="pub-title">Enabling Next-Generation Networks through Programmability, Orchestration, and Virtualization: A Brazilian 5G Initiative</span>
+                                <span class="pub-venue">CSCN <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A3</span><br><small class="pub-date">Julho 2025</small></td>
+                            <td><a href="https://doi.org/10.1109/CSCN67557.2025.11230686" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="5">
+                            <td>13</td>
+                            <td>
+                                <span class="pub-title">A Cyber Defense System for Software-Defined Tactical Networks</span>
+                                <span class="pub-venue">ICMCIS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Maio 2025</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="5">
+                            <td>12</td>
+                            <td>
+                                <span class="pub-title">Cyber Operations Gyms to Train Autonomous Cyber Defense Agents for NATO</span>
+                                <span class="pub-venue">ICMCIS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Maio 2025</small></td>
+                            <td><a href="https://doi.org/10.1109/ICMCIS64378.2025.11047884" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="5">
+                            <td>11</td>
+                            <td>
+                                <span class="pub-title">Securing Software-Defined Tactical Networks: A Cyber Defense System</span>
+                                <span class="pub-venue">IFIP <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A3</span><br><small class="pub-date">Maio 2025</small></td>
+                            <td><a href="https://networking.ifip.org/2025/images/Net25_papers/1571125384.pdf" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2025" data-month="4">
+                            <td>10</td>
+                            <td>
+                                <span class="pub-title">Characterization and prediction of customer (dis)satisfaction of a mobile phone operator</span>
+                                <span class="pub-venue">AINA <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A3</span><br><small class="pub-date">Abril 2025</small></td>
+                            <td><a href="https://doi.org/10.1007/978-3-031-87763-6_22" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2024" data-month="12">
+                            <td>9</td>
+                            <td>
+                                <span class="pub-title">Towards a Real Vehicular Data Cloud</span>
+                                <span class="pub-venue">SDS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Dezembro 2024</small></td>
+                            <td><a href="https://doi.org/10.1109/SDS64317.2024.10883915" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2024" data-month="12">
+                            <td>8</td>
+                            <td>
+                                <span class="pub-title">Towards a Resilient Multi-Agent Controller: Securing and Mitigating Overhead in Tactical SDN</span>
+                                <span class="pub-venue">SDS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Dezembro 2024</small></td>
+                            <td><a href="https://doi.org/10.1109/SDS64317.2024.10883914" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2024" data-month="6">
+                            <td>7</td>
+                            <td>
+                                <span class="pub-title">Military IoT from Management to Perception: Challenges and Opportunities Across Layers</span>
+                                <span class="pub-venue">IoT Magazine (IoTM) <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-journal">Periodico</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">Junho 2024</small></td>
+                            <td><a href="https://doi.org/10.1109/IOTM.001.2400141" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2024" data-month="4">
+                            <td>6</td>
+                            <td>
+                                <span class="pub-title">Adaptive QoS Mechanisms for Control and Data Planes of Software-Defined Tactical Networks</span>
+                                <span class="pub-venue">ICMCIS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Abril 2024</small></td>
+                            <td><a href="https://doi.org/10.1109/ICMCIS61231.2024.10540703" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2024" data-month="4">
+                            <td>5</td>
+                            <td>
+                                <span class="pub-title">Towards a Cyber Defense System in Software-defined Tactical Networks</span>
+                                <span class="pub-venue">ICMCIS <span class="pub-editor">IEEE</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Abril 2024</small></td>
+                            <td><a href="https://doi.org/10.1109/ICMCIS61231.2024.10540952" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2024" data-month="4">
+                            <td>4</td>
+                            <td>
+                                <span class="pub-title">SOFTANET: Slices, QoS and Resilience in Federated Mission Networks with SDN</span>
+                                <span class="pub-venue">ICMCIS - NATO <span class="pub-editor">NATO</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Poster</span></td>
+                            <td>-<br><small class="pub-date">Abril 2024</small></td>
+                            <td><a href="https://www.sto.nato.int/publications/STO%20Meeting%20Proceedings/STO-MP-IST-205/MP-IST-205-36.pdf" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2024" data-month="4">
+                            <td>3</td>
+                            <td>
+                                <span class="pub-title">A Framework to Support Informed Decisions Based on Networked-C2 Agility: Working Process</span>
+                                <span class="pub-venue">ICMCIS - NATO <span class="pub-editor">NATO</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td>-<br><small class="pub-date">Abril 2024</small></td>
+                            <td></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2024" data-month="1">
+                            <td>2</td>
+                            <td>
+                                <span class="pub-title">A Privacy-Preserving Contact Tracing System based on a Publish-Subscribe Model</span>
+                                <span class="pub-venue">JISA <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-journal">Periodico</span></td>
+                            <td><span class="pub-badge badge-qualis">A3</span><br><small class="pub-date">Janeiro 2024</small></td>
+                            <td><a href="https://doi.org/10.5753/jisa.2024.3781" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
+                        </tr>
+                        <tr class="publication-row status-aprovado" data-year="2024" data-month="0">
+                            <td>1</td>
+                            <td>
+                                <span class="pub-title">Uma abordagem Q-Learning para escalonamento dinâmico de comunicação do TSCH</span>
+                                <span class="pub-venue">SBRC <span class="pub-editor">SBC</span></span>
+                                <span class="pub-status badge-approved">Aprovado</span>
+                            </td>
+                            <td><span class="pub-badge badge-conf">Conferencia</span></td>
+                            <td><span class="pub-badge badge-qualis">A4</span><br><small class="pub-date">2024</small></td>
+                            <td><a href="https://doi.org/10.5753/sbrc.2024.1275" target="_blank" rel="noopener noreferrer" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a></td>
                         </tr>
                     </tbody>
                 </table>
